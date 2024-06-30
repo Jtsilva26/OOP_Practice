@@ -1,0 +1,5 @@
+videofirst|two|three|VIDEO object|five|six|seven|eight
+same|two|three|VIDEO object|five|six|seven|eight
+videosecond|same|three|VIDEO object|five|six|seven|eight
+videothird|two|same|VIDEO object|five|six|seven|eight
+videofourth|two|three|VIDEO object|five|same|seven|eight

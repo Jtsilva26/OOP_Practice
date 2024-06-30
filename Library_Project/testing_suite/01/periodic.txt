@@ -1,0 +1,5 @@
+one|two|three|PERIODICAL object|five|six|seven|eight|nine|ten|eleven|
+same|two|three|PERIODICAL object|five|six|seven|eight|nine|ten|eleven|twelve
+one|same|three|PERIODICAL object|five|six|seven|eight|nine|ten|eleven|twelve
+one|two|same|PERIODICAL object|five|six|seven|eight|nine|ten|eleven|twelve
+one|two|three|PERIODICAL object|five|six|seven|eight|same|ten|eleven|twelve

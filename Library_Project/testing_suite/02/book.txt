@@ -1,0 +1,5 @@
+bookfirst|two|three|BOOK object||six|seven|eight|nine|ten
+same|two|three|BOOK object|five|six|seven|eight|nine|ten
+bookthird|same|three|BOOK object|five|six|seven|eight|nine|ten
+bookfourth|two|same|BOOK object|five|six|seven|eight|nine|ten
+bookfifth|two|three|BOOK object|five|six|seven|eight|nine|same

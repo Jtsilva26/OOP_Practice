@@ -1,0 +1,5 @@
+one|two|three|VIDEO object|five|six|seven|eight
+same|two|three|VIDEO object|five|six|seven|eight
+one|same|three|VIDEO object|five|six|seven|eight
+one|two|same|VIDEO object|five|six|seven|eight
+one|two|three|VIDEO object|five|same|seven|eight
