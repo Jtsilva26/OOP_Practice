@@ -42,3 +42,86 @@ Combining function pointers with structs can be useful in various scenarios, suc
 
 * Structs with function pointers
 * Example implementations and use cases
+
+## Library Simulation Project
+
+### Classes and Attributes
+##### Media
+```
+class Media {
+public:
+    Media(const std::string& call_number, const std::string& title, const std::string& subjects, const std::string& notes)
+        : call_number(call_number), title(title), subjects(subjects), notes(notes) {}
+private:
+    std::string call_number;
+    std::string title;
+    std::string subjects;
+    std::string notes;
+};
+```
+##### Book
+```
+class Book : public Media {
+public:
+    Book(const std::string &call_number, const std::string &title, const std::string &subjects, const std::string &author,
+         const std::string &description, const std::string &publisher, const std::string &city, const std::string &year, 
+         const std::string &series, const std::string &notes)
+        : Media(call_number, title, subjects, notes),
+          author(author), description(description), publisher(publisher), city(city), year(year), series(series) {}
+private:
+    std::string author;
+    std::string description;
+    std::string publisher;
+    std::string city;
+    std::string year;
+    std::string series;
+};
+```
+##### Film
+```
+class Film : public Media {
+public:
+    Film(const std::string &call_number, const std::string &title, const std::string &subjects, const std::string &director, 
+         const std::string &notes, const std::string &year)
+        : Media(call_number, title, subjects, notes), director(director), year(year) {}
+private:
+    std::string director;
+    std::string year;
+};
+```
+##### Periodical
+```
+class Periodical : public Media {
+public:
+    Periodical(const std::string &call_number, const std::string &title, const std::string &subjects, const std::string &author, 
+               const std::string &description, const std::string &publisher, const std::string &publishing_history, 
+               const std::string &series, const std::string &notes, const std::string &related_titles, 
+               const std::string &other_forms_of_title, const std::string &govt_doc_number)
+        : Media(call_number, title, subjects, notes), author(author), description(description), publisher(publisher), 
+          publishing_history(publishing_history), series(series), related_titles(related_titles), 
+          other_forms_of_title(other_forms_of_title), govt_doc_number(govt_doc_number) {}
+private:
+    std::string author;
+    std::string description;
+    std::string publisher;
+    std::string publishing_history;
+    std::string series;
+    std::string related_titles;
+    std::string other_forms_of_title;
+    std::string govt_doc_number;
+};
+```
+##### Video
+```
+class Video : public Media {
+public:
+    Video(const std::string &call_number, const std::string &title, const std::string &subjects, const std::string &description, 
+          const std::string &distributor, const std::string &notes, const std::string &series, const std::string &label)
+        : Media(call_number, title, subjects, notes), description(description), distributor(distributor), series(series), label(label) {}
+private:
+    std::string description;
+    std::string distributor;
+    std::string series;
+    std::string label;
+};
+```
